@@ -1,0 +1,8 @@
+{
+  "itemGroup.conteststarter.main": "Contest Starter",
+  "item.conteststarter.starter_item": "Starter Item",
+  "block.conteststarter.starter_block": "Starter Block",
+  "item.conteststarter.love_emoji_helmet": "Love Emoji Helmet",
+  "item.conteststarter.love_emoji_helmet.desc": "Focus on an adult animal to send it into love mode.",
+  "item.conteststarter.love_emoji_helmet.triggered": "Love sent!"
+}

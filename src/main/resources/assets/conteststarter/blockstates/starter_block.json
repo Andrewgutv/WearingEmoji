@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "conteststarter:block/starter_block"
+    }
+  }
+}
