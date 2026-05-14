@@ -1,7 +1,12 @@
 package com.andrew.wearingemoji.event;
 
+import com.andrew.wearingemoji.emoji.AngryEmojiEffect;
 import com.andrew.wearingemoji.emoji.EmojiEffect;
+import com.andrew.wearingemoji.emoji.EmojiEffectRuntimeState;
 import com.andrew.wearingemoji.emoji.GazeTrackingState;
+import com.andrew.wearingemoji.emoji.LoveEmojiEffect;
+import com.andrew.wearingemoji.emoji.QuestionEmojiEffect;
+import com.andrew.wearingemoji.emoji.SleepyEmojiEffect;
 import com.andrew.wearingemoji.item.EmojiHelmetItem;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
@@ -19,10 +24,15 @@ public final class EmojiHelmetEffectHandler {
 
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent.Post event) {
-        if (!(event.getEntity() instanceof ServerPlayer player)) {
+        if (event.getEntity() instanceof ServerPlayer player) {
+            tickPlayerEffects(player);
             return;
         }
 
+        tickAffectedEntity(event.getEntity());
+    }
+
+    private static void tickPlayerEffects(ServerPlayer player) {
         ItemStack helmetStack = player.getItemBySlot(EquipmentSlot.HEAD);
         if (!(helmetStack.getItem() instanceof EmojiHelmetItem helmetItem)) {
             GazeTrackingState.reset(player);
@@ -30,6 +40,7 @@ public final class EmojiHelmetEffectHandler {
         }
 
         EmojiEffect effect = helmetItem.effect();
+        effect.tickWorn(player, helmetStack);
         if (player.getCooldowns().isOnCooldown(helmetStack)) {
             GazeTrackingState.reset(player);
             return;
@@ -51,6 +62,21 @@ public final class EmojiHelmetEffectHandler {
         GazeTrackingState.reset(player);
     }
 
+    private static void tickAffectedEntity(Entity entity) {
+        String effectId = EmojiEffectRuntimeState.getEffectId(entity);
+        if (effectId.isEmpty()) {
+            return;
+        }
+
+        EmojiEffect effect = resolveRuntimeEffect(effectId);
+        if (effect == null) {
+            EmojiEffectRuntimeState.clear(entity);
+            return;
+        }
+
+        effect.tickAffected(entity);
+    }
+
     private static Entity findTarget(ServerPlayer player, EmojiEffect effect) {
         HitResult hitResult = ProjectileUtil.getHitResultOnViewVector(player, entity -> effect.canAffect(player, entity), effect.gazeRange());
         return hitResult instanceof EntityHitResult entityHitResult ? entityHitResult.getEntity() : null;
@@ -59,5 +85,15 @@ public final class EmojiHelmetEffectHandler {
     private static boolean hasCompletedGaze(ServerPlayer player, EmojiEffect effect, Entity target) {
         int lookTicks = GazeTrackingState.advance(player, target.getUUID());
         return lookTicks >= effect.requiredGazeTicks();
+    }
+
+    private static EmojiEffect resolveRuntimeEffect(String effectId) {
+        return switch (effectId) {
+            case QuestionEmojiEffect.EFFECT_ID -> QuestionEmojiEffect.INSTANCE;
+            case "love" -> LoveEmojiEffect.INSTANCE;
+            case "angry" -> AngryEmojiEffect.INSTANCE;
+            case "sleepy" -> SleepyEmojiEffect.INSTANCE;
+            default -> null;
+        };
     }
 }
