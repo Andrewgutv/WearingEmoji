@@ -1,30 +1,17 @@
-WearingEmoji
-================
+# WearingEmoji
 
-WearingEmoji mod project based on the TeaCon 2026 NeoForge 26.1.2 baseline.
+**English (en-US)** | [简体中文 (zh-CN)](/README_zh-CN.md)
 
-Environment
-===========
+## Wear Emojis on Your Character!!
 
-- Java 25
-- NeoForge 26.1.2
-- IntelliJ IDEA 2025.2 or newer is recommended for Java 25 support
+Emojis play an indispensable role in online communication. With this mod, you can wear emojis on your character to show off your personality, while also enjoying a variety of versatile and useful features.
 
-Useful commands
-===============
+## In-Game Screenshots
 
-- `.\gradlew.bat runClient`
-- `.\gradlew.bat runServer`
-- `.\gradlew.bat build`
-- `.\gradlew.bat --refresh-dependencies`
+![Screenshots-1]()
 
-Current scope
-=============
+## Links
 
-Current scope:
+Check out the introduction on [MCMOD]()!
 
-- Gradle and NeoForge baseline configuration
-- Emoji helmet equipment framework
-- Love and Angry emoji helmets
-
-The project currently focuses on readable, extensible emoji equipment code for long-term iteration.
+[GitHub]() Repository!
