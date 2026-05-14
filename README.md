@@ -1,7 +1,7 @@
-Contest Starter
+WearingEmoji
 ================
 
-Minimal TeaCon 2026 starter project based on the official TeaCon 26.1.2 NeoForge template.
+WearingEmoji mod project based on the TeaCon 2026 NeoForge 26.1.2 baseline.
 
 Environment
 ===========
@@ -21,10 +21,10 @@ Useful commands
 Current scope
 =============
 
-This scaffold intentionally keeps only:
+Current scope:
 
 - Gradle and NeoForge baseline configuration
-- A single mod entry class
-- Minimal mod metadata
+- Emoji helmet equipment framework
+- Love and Angry emoji helmets
 
-Everything else from the example template was removed so you can build your competition code on a clean base.
+The project currently focuses on readable, extensible emoji equipment code for long-term iteration.

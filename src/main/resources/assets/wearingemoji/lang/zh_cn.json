@@ -1,0 +1,11 @@
+{
+  "itemGroup.wearingemoji.main": "WearingEmoji",
+  "item.wearingemoji.starter_item": "起步物品",
+  "block.wearingemoji.starter_block": "起步方块",
+  "item.wearingemoji.love_emoji_helmet": "爱心表情头盔",
+  "item.wearingemoji.love_emoji_helmet.desc": "持续注视成年动物时，让它进入恋爱状态。",
+  "item.wearingemoji.love_emoji_helmet.triggered": "爱意已送达！",
+  "item.wearingemoji.angry_emoji_helmet": "愤怒表情头盔",
+  "item.wearingemoji.angry_emoji_helmet.desc": "持续注视敌对生物时，挑衅它。",
+  "item.wearingemoji.angry_emoji_helmet.triggered": "怒意已点燃！"
+}

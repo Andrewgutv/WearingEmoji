@@ -6,7 +6,7 @@ version="${mod_version}"
 displayName="${mod_name}"
 authors="Andrew"
 description='''
-A minimal TeaCon 2026 competition starter built on NeoForge 26.1 and Java 25.
+WearingEmoji: a wearable emoji equipment mod built on NeoForge 26.1.2 and Java 25.
 '''
 
 [[dependencies.${mod_id}]]
