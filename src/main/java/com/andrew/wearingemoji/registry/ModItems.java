@@ -3,6 +3,7 @@ package com.andrew.wearingemoji.registry;
 import com.andrew.wearingemoji.WearingEmojiMod;
 import com.andrew.wearingemoji.item.AngryEmojiHelmetItem;
 import com.andrew.wearingemoji.item.LoveEmojiHelmetItem;
+import com.andrew.wearingemoji.item.SleepyEmojiHelmetItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -22,6 +23,11 @@ public final class ModItems {
     public static final DeferredItem<AngryEmojiHelmetItem> ANGRY_EMOJI_HELMET = ITEMS.registerItem(
         "angry_emoji_helmet",
         AngryEmojiHelmetItem::new,
+        properties -> properties.stacksTo(1)
+    );
+    public static final DeferredItem<SleepyEmojiHelmetItem> SLEEPY_EMOJI_HELMET = ITEMS.registerItem(
+        "sleepy_emoji_helmet",
+        SleepyEmojiHelmetItem::new,
         properties -> properties.stacksTo(1)
     );
 

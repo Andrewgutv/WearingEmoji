@@ -7,5 +7,8 @@
   "item.wearingemoji.love_emoji_helmet.triggered": "Love sent!",
   "item.wearingemoji.angry_emoji_helmet": "Angry Emoji Helmet",
   "item.wearingemoji.angry_emoji_helmet.desc": "Focus on a hostile mob to provoke it.",
-  "item.wearingemoji.angry_emoji_helmet.triggered": "Provoked!"
+  "item.wearingemoji.angry_emoji_helmet.triggered": "Provoked!",
+  "item.wearingemoji.sleepy_emoji_helmet": "Sleepy Emoji Helmet",
+  "item.wearingemoji.sleepy_emoji_helmet.desc": "Focus on a creature to make it drowsy.",
+  "item.wearingemoji.sleepy_emoji_helmet.triggered": "Drowsy..."
 }
