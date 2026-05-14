@@ -21,6 +21,8 @@ public final class ModCreativeModeTabs {
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.LOVE_EMOJI_HELMET.get());
                 output.accept(ModItems.ANGRY_EMOJI_HELMET.get());
+                output.accept(ModItems.SLEEPY_EMOJI_HELMET.get());
+                output.accept(ModItems.QUESTION_EMOJI_HELMET.get());
                 output.accept(ModItems.STARTER_ITEM.get());
                 output.accept(ModItems.STARTER_BLOCK_ITEM.get());
             })

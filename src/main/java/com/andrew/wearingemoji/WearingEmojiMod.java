@@ -1,6 +1,7 @@
 package com.andrew.wearingemoji;
 
 import com.andrew.wearingemoji.event.EmojiHelmetEffectHandler;
+import com.andrew.wearingemoji.event.QuestionFollowHandler;
 import com.andrew.wearingemoji.registry.ModBlocks;
 import com.andrew.wearingemoji.registry.ModCreativeModeTabs;
 import com.andrew.wearingemoji.registry.ModItems;
@@ -20,6 +21,7 @@ public final class WearingEmojiMod {
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         NeoForge.EVENT_BUS.register(EmojiHelmetEffectHandler.class);
+        NeoForge.EVENT_BUS.register(QuestionFollowHandler.class);
         LOGGER.info("Loading {}", MOD_ID);
     }
 }
