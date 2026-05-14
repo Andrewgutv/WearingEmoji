@@ -10,5 +10,8 @@
   "item.wearingemoji.angry_emoji_helmet.triggered": "怒意已点燃！",
   "item.wearingemoji.sleepy_emoji_helmet": "困倦表情头盔",
   "item.wearingemoji.sleepy_emoji_helmet.desc": "持续注视一个生物时，让它变得困倦迟缓。",
-  "item.wearingemoji.sleepy_emoji_helmet.triggered": "困意已蔓延……"
+  "item.wearingemoji.sleepy_emoji_helmet.triggered": "困意已蔓延……",
+  "item.wearingemoji.question_emoji_helmet": "疑问表情头盔",
+  "item.wearingemoji.question_emoji_helmet.desc": "持续注视一个生物时，让它注意到你。",
+  "item.wearingemoji.question_emoji_helmet.triggered": "它注意到你了。"
 }

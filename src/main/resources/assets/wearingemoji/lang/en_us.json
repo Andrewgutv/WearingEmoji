@@ -10,5 +10,8 @@
   "item.wearingemoji.angry_emoji_helmet.triggered": "Provoked!",
   "item.wearingemoji.sleepy_emoji_helmet": "Sleepy Emoji Helmet",
   "item.wearingemoji.sleepy_emoji_helmet.desc": "Focus on a creature to make it drowsy.",
-  "item.wearingemoji.sleepy_emoji_helmet.triggered": "Drowsy..."
+  "item.wearingemoji.sleepy_emoji_helmet.triggered": "Drowsy...",
+  "item.wearingemoji.question_emoji_helmet": "Question Emoji Helmet",
+  "item.wearingemoji.question_emoji_helmet.desc": "Focus on a creature to make it notice you.",
+  "item.wearingemoji.question_emoji_helmet.triggered": "Look this way?"
 }
