@@ -20,6 +20,7 @@ public final class ModCreativeModeTabs {
             .icon(() -> ModItems.LOVE_EMOJI_HELMET.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.LOVE_EMOJI_HELMET.get());
+                output.accept(ModItems.ANGRY_EMOJI_HELMET.get());
                 output.accept(ModItems.STARTER_ITEM.get());
                 output.accept(ModItems.STARTER_BLOCK_ITEM.get());
             })

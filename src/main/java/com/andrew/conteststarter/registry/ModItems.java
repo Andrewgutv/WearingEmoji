@@ -1,6 +1,7 @@
 package com.andrew.conteststarter.registry;
 
 import com.andrew.conteststarter.ContestStarter;
+import com.andrew.conteststarter.item.AngryEmojiHelmetItem;
 import com.andrew.conteststarter.item.LoveEmojiHelmetItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -16,6 +17,11 @@ public final class ModItems {
     public static final DeferredItem<LoveEmojiHelmetItem> LOVE_EMOJI_HELMET = ITEMS.registerItem(
         "love_emoji_helmet",
         LoveEmojiHelmetItem::new,
+        properties -> properties.stacksTo(1)
+    );
+    public static final DeferredItem<AngryEmojiHelmetItem> ANGRY_EMOJI_HELMET = ITEMS.registerItem(
+        "angry_emoji_helmet",
+        AngryEmojiHelmetItem::new,
         properties -> properties.stacksTo(1)
     );
 
