@@ -23,6 +23,7 @@ public final class ModCreativeModeTabs {
                 output.accept(ModItems.ANGRY_EMOJI_HELMET.get());
                 output.accept(ModItems.SLEEPY_EMOJI_HELMET.get());
                 output.accept(ModItems.QUESTION_EMOJI_HELMET.get());
+                output.accept(ModItems.HAPPY_EMOJI_HELMET.get());
             })
             .build());
 

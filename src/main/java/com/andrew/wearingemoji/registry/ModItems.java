@@ -2,6 +2,7 @@ package com.andrew.wearingemoji.registry;
 
 import com.andrew.wearingemoji.WearingEmojiMod;
 import com.andrew.wearingemoji.item.AngryEmojiHelmetItem;
+import com.andrew.wearingemoji.item.HappyEmojiHelmetItem;
 import com.andrew.wearingemoji.item.LoveEmojiHelmetItem;
 import com.andrew.wearingemoji.item.QuestionEmojiHelmetItem;
 import com.andrew.wearingemoji.item.SleepyEmojiHelmetItem;
@@ -31,6 +32,11 @@ public final class ModItems {
     public static final DeferredItem<QuestionEmojiHelmetItem> QUESTION_EMOJI_HELMET = ITEMS.registerItem(
         "question_emoji_helmet",
         QuestionEmojiHelmetItem::new,
+        properties -> properties.stacksTo(1)
+    );
+    public static final DeferredItem<HappyEmojiHelmetItem> HAPPY_EMOJI_HELMET = ITEMS.registerItem(
+        "happy_emoji_helmet",
+        HappyEmojiHelmetItem::new,
         properties -> properties.stacksTo(1)
     );
 
