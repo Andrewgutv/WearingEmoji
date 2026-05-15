@@ -4,6 +4,7 @@ import com.andrew.wearingemoji.emoji.AngryEmojiEffect;
 import com.andrew.wearingemoji.emoji.EmojiEffect;
 import com.andrew.wearingemoji.emoji.EmojiEffectRuntimeState;
 import com.andrew.wearingemoji.emoji.GazeTrackingState;
+import com.andrew.wearingemoji.emoji.HappyEmojiEffect;
 import com.andrew.wearingemoji.emoji.LoveEmojiEffect;
 import com.andrew.wearingemoji.emoji.QuestionEmojiEffect;
 import com.andrew.wearingemoji.emoji.SleepyEmojiEffect;
@@ -98,6 +99,7 @@ public final class EmojiHelmetEffectHandler {
             case "love" -> LoveEmojiEffect.INSTANCE;
             case "angry" -> AngryEmojiEffect.INSTANCE;
             case "sleepy" -> SleepyEmojiEffect.INSTANCE;
+            case "happy" -> HappyEmojiEffect.INSTANCE;
             default -> null;
         };
     }
