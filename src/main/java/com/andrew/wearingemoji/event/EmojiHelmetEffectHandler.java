@@ -9,6 +9,9 @@ import com.andrew.wearingemoji.emoji.LoveEmojiEffect;
 import com.andrew.wearingemoji.emoji.QuestionEmojiEffect;
 import com.andrew.wearingemoji.emoji.SleepyEmojiEffect;
 import com.andrew.wearingemoji.item.EmojiHelmetItem;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -20,6 +23,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 public final class EmojiHelmetEffectHandler {
+    private static final Map<UUID, EmojiHelmetItem> LAST_EQUIPPED_HELMETS = new HashMap<>();
+
     private EmojiHelmetEffectHandler() {
     }
 
@@ -34,11 +39,22 @@ public final class EmojiHelmetEffectHandler {
     }
 
     private static void tickPlayerEffects(ServerPlayer player) {
+        UUID playerId = player.getUUID();
         ItemStack helmetStack = player.getItemBySlot(EquipmentSlot.HEAD);
         if (!(helmetStack.getItem() instanceof EmojiHelmetItem helmetItem)) {
+            EmojiHelmetItem previousHelmet = LAST_EQUIPPED_HELMETS.remove(playerId);
+            if (previousHelmet != null) {
+                previousHelmet.onUnequipped(player);
+            }
             GazeTrackingState.reset(player);
             return;
         }
+
+        EmojiHelmetItem previousHelmet = LAST_EQUIPPED_HELMETS.get(playerId);
+        if (previousHelmet != null && previousHelmet != helmetItem) {
+            previousHelmet.onUnequipped(player);
+        }
+        LAST_EQUIPPED_HELMETS.put(playerId, helmetItem);
 
         EmojiEffect effect = helmetItem.effect();
         effect.tickWorn(player, helmetStack);

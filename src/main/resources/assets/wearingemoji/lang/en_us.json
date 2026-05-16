@@ -15,6 +15,9 @@
   "item.wearingemoji.happy_emoji_helmet": "Happy Emoji Helmet",
   "item.wearingemoji.happy_emoji_helmet.desc": "Focus on a friendly creature to cheer it up.",
   "item.wearingemoji.happy_emoji_helmet.triggered": "Cheered up!",
+  "item.wearingemoji.clown_emoji_helmet": "Clown Emoji Helmet",
+  "item.wearingemoji.clown_emoji_helmet.desc": "A chaotic helmet that keeps sabotaging your offhand before rewarding long-term commitment.",
+  "item.wearingemoji.clown_emoji_helmet.triggered": "The joke is on you.",
   "item.wearingemoji.think_emoji_helmet": "Thinking Emoji Helmet",
   "item.wearingemoji.think_emoji_helmet.desc": "A placeholder helmet reserved for future thinking-themed interactions.",
   "item.wearingemoji.think_emoji_helmet.triggered": "..."
