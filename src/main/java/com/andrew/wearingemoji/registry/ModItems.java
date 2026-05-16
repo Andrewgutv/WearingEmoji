@@ -6,6 +6,7 @@ import com.andrew.wearingemoji.item.HappyEmojiHelmetItem;
 import com.andrew.wearingemoji.item.LoveEmojiHelmetItem;
 import com.andrew.wearingemoji.item.QuestionEmojiHelmetItem;
 import com.andrew.wearingemoji.item.SleepyEmojiHelmetItem;
+import com.andrew.wearingemoji.item.ThinkEmojiHelmetItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -37,6 +38,11 @@ public final class ModItems {
     public static final DeferredItem<HappyEmojiHelmetItem> HAPPY_EMOJI_HELMET = ITEMS.registerItem(
         "happy_emoji_helmet",
         HappyEmojiHelmetItem::new,
+        properties -> properties.stacksTo(1)
+    );
+    public static final DeferredItem<ThinkEmojiHelmetItem> THINK_EMOJI_HELMET = ITEMS.registerItem(
+        "think_emoji_helmet",
+        ThinkEmojiHelmetItem::new,
         properties -> properties.stacksTo(1)
     );
 

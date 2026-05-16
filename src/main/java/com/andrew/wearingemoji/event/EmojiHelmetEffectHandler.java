@@ -41,7 +41,11 @@ public final class EmojiHelmetEffectHandler {
         }
 
         EmojiEffect effect = helmetItem.effect();
+
         effect.tickWorn(player, helmetStack);
+
+
+
         if (!player.isCrouching()) {
             GazeTrackingState.reset(player);
             return;

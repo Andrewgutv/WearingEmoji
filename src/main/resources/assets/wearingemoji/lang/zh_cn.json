@@ -14,5 +14,8 @@
   "item.wearingemoji.question_emoji_helmet.triggered": "它注意到你了。",
   "item.wearingemoji.happy_emoji_helmet": "开心表情头盔",
   "item.wearingemoji.happy_emoji_helmet.desc": "持续注视一个友好生物时，让它变得更开心更活泼。",
-  "item.wearingemoji.happy_emoji_helmet.triggered": "开心起来吧！"
+  "item.wearingemoji.happy_emoji_helmet.triggered": "开心起来吧！",
+  "item.wearingemoji.think_emoji_helmet": "思考表情头盔",
+  "item.wearingemoji.think_emoji_helmet.desc": "持续注视一个生物时，让它陷入思考。",
+  "item.wearingemoji.think_emoji_helmet.triggered": "嗯……容我想想。"
 }

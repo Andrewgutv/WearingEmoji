@@ -23,4 +23,5 @@ public interface EmojiEffect {
 
     default void tickAffected(Entity entity) {
     }
+
 }

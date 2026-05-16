@@ -14,5 +14,8 @@
   "item.wearingemoji.question_emoji_helmet.triggered": "Look this way?",
   "item.wearingemoji.happy_emoji_helmet": "Happy Emoji Helmet",
   "item.wearingemoji.happy_emoji_helmet.desc": "Focus on a friendly creature to cheer it up.",
-  "item.wearingemoji.happy_emoji_helmet.triggered": "Cheered up!"
+  "item.wearingemoji.happy_emoji_helmet.triggered": "Cheered up!",
+  "item.wearingemoji.think_emoji_helmet": "Thinking Emoji Helmet",
+  "item.wearingemoji.think_emoji_helmet.desc": "Focus on a creature to make it lost in thought.",
+  "item.wearingemoji.think_emoji_helmet.triggered": "Hmm..."
 }
