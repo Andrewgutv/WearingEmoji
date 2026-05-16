@@ -1,6 +1,6 @@
-{
-  "itemGroup.wearingemoji.main": "可穿戴Emoji",
-  "item.wearingemoji.love_emoji_helmet": "花痴脸",
+﻿{
+  "itemGroup.wearingemoji.main": "WearingEmoji",
+  "item.wearingemoji.love_emoji_helmet": "花痴脸头盔",
   "item.wearingemoji.love_emoji_helmet.desc": "持续注视成年动物时，让它进入恋爱状态。",
   "item.wearingemoji.love_emoji_helmet.triggered": "爱意已送达！",
   "item.wearingemoji.angry_emoji_helmet": "愤怒表情头盔",
@@ -16,6 +16,6 @@
   "item.wearingemoji.happy_emoji_helmet.desc": "持续注视一个友好生物时，让它变得更开心更活泼。",
   "item.wearingemoji.happy_emoji_helmet.triggered": "开心起来吧！",
   "item.wearingemoji.think_emoji_helmet": "思考表情头盔",
-  "item.wearingemoji.think_emoji_helmet.desc": "持续注视一个生物时，让它陷入思考。",
-  "item.wearingemoji.think_emoji_helmet.triggered": "嗯……容我想想。"
+  "item.wearingemoji.think_emoji_helmet.desc": "一个保留给后续思考主题互动的占位头盔。",
+  "item.wearingemoji.think_emoji_helmet.triggered": "……"
 }
